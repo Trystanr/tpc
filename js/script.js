@@ -133,7 +133,7 @@ function JSONtoTable(obj) {
 
 	sOut += "<tbody>";
 	for (var i = 0; i < obj["items"].length - 1; i++) {
-		sOut += "<tr>";
+		sOut += '<tr data-id="' + obj["items"][i]['id'] + '">';
 		sOut += "<td>" + obj["items"][i]['id'] + "</td>";
 		sOut += "<td>" + obj["items"][i]['tier'] + "</td>";
 		sOut += "<td>" + obj["items"][i]['fullName'] + "</td>";
@@ -167,4 +167,16 @@ function populateTable(tableID, jsonString) {
 	tableElement.innerHTML = JSONtoTable(jsonString);
 
 	$('#'+tableID).DataTable();
+
+	$('#'+tableID).find('tr').click( function(){
+		if ($(this).parent('thead').length == 0) {
+			console.log('You clicked row '+ ($(this).index()+1) );
+			console.log($(this).data("id"));
+		}
+	});
 }
+
+
+
+
+

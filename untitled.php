@@ -28,3 +28,9 @@ ClubDur
 comment
 CopyAgency
 CopyPlaying
+
+
+NEW FIELDS
+
+Preferred position
+Footedness
