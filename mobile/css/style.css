@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Helvetica Neue';
+}
+
+#mobi-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	width: 100vw;
+	height: 10vh;
+	padding: 2vh 0;
+
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px 0;
+
+	background-color: #fff;
+}
+
+#mobi-nav a#nav-logo {
+	width: 40vw;
+	height: 6vh;
+	background-image: url("../img/tpc_logo.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	padding: 0;
+	margin: 0;
+}
+#mobi-nav a img {
+	width: 40vw;
+}
+
+#spacer {
+	height: 200vh;
+
+	/*background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);*/
+}
+
+#header-welcome {
+	margin-top: 12vh;
+	margin-bottom: 0;
+
+	font-weight: bold;
+
+	font-size: 2.7em;
+	line-height: 1;
+
+	padding: 0 4vw;
+}
+
+#warning-18 {
+	width: 92vw;
+	margin-left: 4vw;
+	height: 20vh;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

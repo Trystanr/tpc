@@ -89,7 +89,7 @@ $(document).ready(function() {
 			dataType: "text",
 			error: function(xhr, statusText) { console.log("Error: " + statusText); },
 			success: function(msg) {
-				// console.log( (msg) ); 
+				console.log( (msg) ); 
 				console.log(JSON.parse(msg));
 
 				var jsonObj = JSON.parse(msg);
