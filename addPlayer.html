@@ -23,93 +23,129 @@
 		- Validation
 
 	 -->
+	<div id="addPlayerForm">
+		<div class="rowForm">
+			<div class="rowCont">
+				<label for="tier">TPC Tier</label>
+				<select name="tier" id="tier">
+					<option value="1">Gold</option>
+					<option value="2">Silver</option>
+					<option value="3">Assess</option>
+					<option value="4">To Release</option>
+					<option value="5">O/S INFO.</option>
+					<option value="6">ISSUES</option>
+				</select>
+			</div>
+		</div>
 
-	<label for="tier">TPC Tier</label>
-	<select name="tier" id="tier">
-		<option value="1">Gold</option>
-		<option value="2">Silver</option>
-		<option value="3">Assess</option>
-		<option value="4">To Release</option>
-		<option value="5">O/S INFO.</option>
-		<option value="6">ISSUES</option>
-	</select>
-	<br>
+		<div class="rowForm">
+			<div class="rowCont">
+				<label for="fullName">Full Name</label>
+				<input type="text" name="fullName" id="fullName" placeholder="Full Name">
+			</div>
 
-	<label for="fullName">Full Name</label>
-	<input type="text" name="fullName" id="fullName" placeholder="Full Name">
-	<br>
+			<div class="rowCont">
+				<label for="dob">Date Of Birth</label>
+				<input type="text" name="dob" id="dob" value="2018-11-29">
+			</div>
+		</div>
 
-	<label for="dob">Date Of Birth</label>
-	<input type="text" name="dob" id="dob" value="2018-11-29">
-	<br>
+		<div class="rowForm">
 
-	<label for="pos">Position</label>
-	<input type="text" name="pos" id="pos" placeholder="CB, CM">
-	<br>
+			<div class="rowCont">
+				<label for="pos">Position</label>
+				<input type="text" name="pos" id="pos" placeholder="CB, CM">
+			</div>
 
-	<label for="prof">Professional</label>
-	<input type="checkbox" name="prof" id="prof">
-	<br>
+			<div class="rowCont">
+				<label for="prof">Professional</label>
+				<input type="checkbox" name="prof" id="prof">
+			</div>
 
-	<label for="amat">Amateur</label>
-	<input type="checkbox" name="amat" id="amat">
-	<br>
+			<div class="rowCont">
+				<label for="amat">Amateur</label>
+				<input type="checkbox" name="amat" id="amat">
+			</div>
+		</div>
 
-	<label for="scholar">Scholar</label>
-	<select name="scholar" id="scholar">
-		<option value="0">Not Applicable</option>
-		<option value="1">Grade 1</option>
-		<option value="2">Grade 2</option>
-		<option value="3">Grade 3</option>
-		<option value="4">Grade 4</option>
-		<option value="5">Grade 5</option>
-		<option value="6">Grade 6</option>
-		<option value="7">Grade 7</option>
-		<option value="8">Grade 8</option>
-		<option value="9">Grade 9</option>
-		<option value="10">Grade 10</option>
-		<option value="11">Grade 11</option>
-		<option value="12">Grade 12</option>
-	</select>
-	<br>
+		<div class="rowForm">
+			<div class="rowCont">
+			<label for="scholar">Scholar</label>
+			<select name="scholar" id="scholar">
+				<option value="0">Not Applicable</option>
+				<option value="1">Grade 1</option>
+				<option value="2">Grade 2</option>
+				<option value="3">Grade 3</option>
+				<option value="4">Grade 4</option>
+				<option value="5">Grade 5</option>
+				<option value="6">Grade 6</option>
+				<option value="7">Grade 7</option>
+				<option value="8">Grade 8</option>
+				<option value="9">Grade 9</option>
+				<option value="10">Grade 10</option>
+				<option value="11">Grade 11</option>
+				<option value="12">Grade 12</option>
+			</select>
+			</div>
+		</div>
 
-	<label for="TPCSign">Signed With TPC</label>
-	<input type="text" name="TPCSign" id="TPCSign" value="2018-11-29">
-	<br>
+		<div class="rowForm">
+			<div class="rowCont">
+			<label for="TPCSign">Signed With TPC</label>
+			<input type="text" name="TPCSign" id="TPCSign" value="2018-11-29">
+			</div>
 
-	<label for="TPCUntil">With TPC Until</label>
-	<input type="text" name="TPCUntil" id="TPCUntil" value="2018-11-29">
-	<br>
+			<div class="rowCont">
+			<label for="TPCUntil">With TPC Until</label>
+			<input type="text" name="TPCUntil" id="TPCUntil" value="2018-11-29">
+			</div>
+		</div>
 
-	<label for="ClubContract">Club Contracted With</label>
-	<input type="text" name="ClubContract" id="ClubContract" placeholder="Club Contracted With">
-	<br>
+		<div class="rowForm">
+			<div class="rowCont">
+			<label for="ClubContract">Club Contracted With</label>
+			<input type="text" name="ClubContract" id="ClubContract" placeholder="Club Contracted With">
+			</div>
 
-	<label for="ClubName">Club Currently With</label>
-	<input type="text" name="ClubName" id="ClubName" placeholder="Club Currently With">
-	<br>
+			<div class="rowCont">
+			<label for="ClubName">Club Currently With</label>
+			<input type="text" name="ClubName" id="ClubName" placeholder="Club Currently With">
+			</div>
 
-	<label for="ClubSign">Club Sign</label>
-	<input type="text" name="ClubSign" id="ClubSign" placeholder="Club Signed" value="2018-11-29">
-	<br>
+			<div class="rowCont">
+			<label for="ClubSign">Club Sign</label>
+			<input type="text" name="ClubSign" id="ClubSign" placeholder="Club Signed" value="2018-11-29">
+			</div>
 
-	<label for="ClubDur">Club Dur</label>
-	<input type="text" name="ClubDur" id="ClubDur" placeholder="Club Duration" value="2018-11-29">
-	<br>
+			<div class="rowCont">
+			<label for="ClubDur">Club Dur</label>
+			<input type="text" name="ClubDur" id="ClubDur" placeholder="Club Duration" value="2018-11-29">
+			</div>
+		</div>
 
-	<label for="comment">Comment</label>
-	<textarea type="text" name="comment" id="comment" placeholder="Comment" rows="10" cols="30"></textarea>
-	<br>
+		<div class="rowForm">
+			<div class="rowCont">
+			<label for="comment">Comment</label>
+			<textarea type="text" name="comment" id="comment" placeholder="Comment" rows="10" cols="30"></textarea>
+			</div>
+		</div>
 
-	<label for="CopyAgency">Copy Agency</label>
-	<input type="text" name="CopyAgency" id="CopyAgency">
-	<br>
+		<div class="rowForm">
+			<div class="rowCont">
+			<label for="CopyAgency">Copy Agency</label>
+			<input type="text" name="CopyAgency" id="CopyAgency">
+			</div>
 
-	<label for="CopyPlaying">Copy Playing</label>
-	<input type="text" name="CopyPlaying" id="CopyPlaying">
-	<br>
+			<div class="rowCont">
+			<label for="CopyPlaying">Copy Playing</label>
+			<input type="text" name="CopyPlaying" id="CopyPlaying">
+			</div>
+		</div>
 
-	<a href="#" id="requestAddPlayer">Add Player</a>
+		<div class="rowCont">
+		<a href="#" id="requestAddPlayer">Add Player</a>
+	</div>
+	</div>
 
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/script.js"></script>

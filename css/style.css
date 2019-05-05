@@ -65,3 +65,73 @@ table th {
 
 	font-weight: 100;
 }*/
+
+#addPlayerForm {
+	width: 80vw;
+	margin-left: 10vw;
+
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Roboto';
+
+	padding: 40px 0;
+}
+
+#addPlayerForm .rowForm {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-between;*/
+
+	margin-bottom: 20px;
+}
+
+#addPlayerForm .rowCont {
+	display: flex;
+	flex-direction: column;
+
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+	/*border-bottom: 1px solid #d4d4d4;*/
+}
+
+#addPlayerForm label {
+	margin: 15px 0;
+	font-size: 15px;
+	font-weight: 500;
+
+	color: #565656;
+}
+
+#addPlayerForm select, #addPlayerForm input, #addPlayerForm textarea {
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	padding: 10px 20px 10px 5px;
+
+	color: #9e9e9e;
+}
+
+#addPlayerForm select:focus, #addPlayerForm input:focus, #addPlayerForm textarea:focus {
+	border: 1px solid #de7733;
+	outline: none;
+}
+
+#addPlayerForm a {
+	margin: 15px 0;
+	font-size: 20px;
+	font-weight: 700;
+
+	padding: 10px 20px;
+	color: #fff;
+
+	border-radius: 5px;
+
+	background-color: #de7733;
+
+	align-self: flex-start;
+
+	text-decoration: none;
+}
