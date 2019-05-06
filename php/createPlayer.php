@@ -2,13 +2,8 @@
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["player"], false);
 
-	$servername = "localhost";
-	$username = "toor";
-	$password = "root";
-	$dbname = "tpc";
+	include 'dbConnect.php';
 
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname);
 	// Check connection
 	if ($conn->connect_error) {
 	    die("0Connection failed: " . $conn->connect_error);

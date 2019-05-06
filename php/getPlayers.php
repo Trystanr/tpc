@@ -4,15 +4,7 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
 
-	$servername = "localhost";
-	$username = "toor";
-	$password = "root";
-	$dbname = "tpc";
-
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	if ($conn->connect_error) {
-		die("0Connection failed: " . $conn->connect_error);
-	}
+	include 'dbConnect.php';
 
 	/* Select queries return a resultset */
 	if ($result = $conn->query("SELECT * FROM tblPlayers")) {
