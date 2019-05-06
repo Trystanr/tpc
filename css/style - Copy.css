@@ -67,8 +67,8 @@ table th {
 }*/
 
 #addPlayerForm {
-	width: 60vw;
-	margin-left: 20vw;
+	width: 80vw;
+	margin-left: 10vw;
 
 	background-color: #fff;
 
@@ -83,24 +83,23 @@ table th {
 #addPlayerForm .rowForm {
 	display: flex;
 	flex-direction: row;
-	    flex-wrap: wrap;
 	/*justify-content: space-between;*/
 
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #addPlayerForm .rowCont {
 	display: flex;
 	flex-direction: column;
-	    flex-grow: 1;
 
 	margin-bottom: 20px;
 	margin-right: 20px;
+
+	/*border-bottom: 1px solid #d4d4d4;*/
 }
 
-
 #addPlayerForm label {
-	margin: 5px 0;
+	margin: 15px 0;
 	font-size: 15px;
 	font-weight: 500;
 
@@ -108,27 +107,15 @@ table th {
 }
 
 #addPlayerForm select, #addPlayerForm input, #addPlayerForm textarea {
-	border: 2px solid #00000000;
-	border-radius: 4px;
-	outline: 0;
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
 	padding: 10px 20px 10px 5px;
 
-	background-color: #0000000f;
-	color: #9e9e9e;
-}
-
-#addPlayerForm input[type="checkbox"]{
-	border: 2px solid #00000000;
-	border-radius: 4px;
-	outline: 0;
-	padding: 10px 20px 10px 5px;
-
-	background-color: #0000000f;
 	color: #9e9e9e;
 }
 
 #addPlayerForm select:focus, #addPlayerForm input:focus, #addPlayerForm textarea:focus {
-	border: 2px solid #de7733;
+	border: 1px solid #de7733;
 	outline: none;
 }
 
