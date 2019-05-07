@@ -8,6 +8,7 @@ body {
 
 	background-color: #fff;
 }
+
 /*
 table {
 	font-family: Helvetica, sans-serif;
@@ -83,52 +84,150 @@ table th {
 #addPlayerForm .rowForm {
 	display: flex;
 	flex-direction: row;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	/*justify-content: space-between;*/
 
 	margin-bottom: 10px;
 }
 
+#addPlayerForm .rowForm.rowFormSpace {
+	margin-bottom: 50px;
+}
+
 #addPlayerForm .rowCont {
 	display: flex;
 	flex-direction: column;
-	    flex-grow: 1;
+	flex-grow: 1;
 
 	margin-bottom: 20px;
 	margin-right: 20px;
 }
 
 
-#addPlayerForm label {
+/*#addPlayerForm label {
 	margin: 5px 0;
 	font-size: 15px;
 	font-weight: 500;
 
 	color: #565656;
+}*/
+
+#addPlayerForm label {
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: 500;
+	color: #565656;
+	background-color: #fff;
+	z-index: 20;
+	align-self: flex-start;
+	margin-left: 10px;
+	padding: 1px 10px 1px 10px;
+	border-radius: 4px;
 }
 
-#addPlayerForm select, #addPlayerForm input, #addPlayerForm textarea {
+#addPlayerForm select,
+#addPlayerForm input,
+#addPlayerForm textarea {
 	border: 2px solid #00000000;
 	border-radius: 4px;
 	outline: 0;
-	padding: 10px 20px 10px 5px;
+	padding: 10px 20px 10px 20px;
 
 	background-color: #0000000f;
 	color: #9e9e9e;
+
+	height: 7vh;
+	font-size: 18px;
 }
 
-#addPlayerForm input[type="checkbox"]{
-	border: 2px solid #00000000;
+#addPlayerForm select,
+#addPlayerForm input,
+#addPlayerForm textarea {
+	border: 2px solid #7c7c7c;
 	border-radius: 4px;
 	outline: 0;
-	padding: 10px 20px 10px 5px;
-
-	background-color: #0000000f;
-	color: #9e9e9e;
+	padding: 10px 20px 10px 20px;
+	background-color: #ffffff;
+	color: #000;
+	height: 7vh;
+	font-size: 18px;
+	margin-top: -16px;
 }
 
-#addPlayerForm select:focus, #addPlayerForm input:focus, #addPlayerForm textarea:focus {
-	border: 2px solid #de7733;
+#addPlayerForm select::placeholder,
+#addPlayerForm input::placeholder,
+#addPlayerForm textarea::placeholder {
+	color: #bcbcbc;
+}
+
+#addPlayerForm input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	height: 0;
+	width: 0;
+	cursor: pointer;
+}
+
+#addPlayerForm .rowCont .radioLabel {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+
+	/*margin-bottom: 20px;*/
+	/*margin-right: 20px;*/
+
+	align-items: center;
+
+	font-size: 18px;
+
+	margin-left: 0;
+	padding: 0;
+}
+
+#addPlayerForm .rowCont .radioLabel .radioInnerLabel {
+	margin-right: 10px;
+}
+
+.checkmark {
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+	/*position: absolute;*/
+	margin-top: 5px;
+
+	border: 2px solid #7c7c7c;
+
+	border-radius: 99999px;
+
+	position: relative;
+}
+
+.checkmark:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	left: 3px;
+	top: 3px;
+	position: absolute;
+
+	border: 5px solid #fff;
+	background: #fff;
+
+	border-radius: 99999px;
+}
+
+#addPlayerForm input[type="radio"]:checked~.checkmark {
+	background-color: #fff;
+}
+
+#addPlayerForm input[type="radio"]:checked~.checkmark:after {
+	background: #3a3a3a;
+}
+
+#addPlayerForm select:focus,
+#addPlayerForm input:focus,
+#addPlayerForm textarea:focus {
+	border: 2px solid #48a7ff;
 	outline: none;
 }
 
@@ -142,9 +241,9 @@ table th {
 
 	border-radius: 5px;
 
-	background-color: #de7733;
+	background-color: #48a7ff;
 
-	align-self: flex-start;
+	align-self: flex-end;
 
 	text-decoration: none;
 }
