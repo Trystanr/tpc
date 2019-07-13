@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+
+/* PLAYER LIST */
+
+ul#player-list {
+	margin: 0;
+	padding: 0;
+
+	margin: 20px;
+}
+
+ul#player-list li {
+	list-style: none;
+
+	margin: 0 0 20px 0;
+	padding: 0;
+
+	background-color: #F3F3F3;
+
+	border-radius: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	overflow: hidden;
+}
+
+.player-head {
+	margin-left: 20px;
+
+	flex: 3;
+}
+
+.player-head h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.player-head h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.player-team {
+	width: 200px;
+    height: 100px;
+    background-image: url(../img/clubs/monaco.png);
+    background-position: 20px -60%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    flex: 1;
+}
+
+
+
+/* PLAYER MODAL */
+
+#player-modal {
+	width: 100vw;
+	height: 100vh;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: #F3F3F3;
+
+	border-radius: 8px;
+
+	padding: 20px;
+
+	opacity: 1;
+	display: block;
+
+	overflow-y: scroll;
+}
+
+#player-modal.modal-hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#player-modal.transitions-allow {
+	transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+#player-modal-content {
+	opacity: 0;
+	/*visibility: hidden;*/
+
+	transform: translateX(-10px);
+
+	transition: opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+#player-modal-content.content-show {
+	opacity: 1;
+	/*visibility: visible;*/
+	transform: translateX(0);
+}
+
+#player-modal h2 {
+	padding: 0;
+	margin: 0;
+}
+
+#player-modal h3 {
+	padding: 0;
+	margin: 0;
+}
+
+a#player-modal-dismiss {
+	position: fixed;
+
+	top: -50px;
+	right: 10px;
+
+	padding: 10px 14px;
+	margin: 0;
+
+	text-decoration: none;
+
+	background-color: #000;
+	color: #fff;
+
+	cursor: pointer;
+
+	transition: top 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
