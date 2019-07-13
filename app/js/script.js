@@ -24,7 +24,7 @@ $.get( "http://affix.joburg/tpc/php/getPlayers.php", function( data ) {
 
   	// TODO: Club logo checking with switch
   	$('#player-list').append(
-  	  $('<li data-player="'+i+'"><div class="player-head"><h2>'+data.items[i].fullName+'</h2><h3>'+calcAge(data.items[i].dob)+' Years</h3></div><div class="player-team" style="background-image:url(img/clubs/'+data.items[i].ClubName+'.png)"></div></li>')
+  	  $('<li data-player="'+i+'"><div class="player-head"><h2>'+data.items[i].fullName+'</h2><h3>'+calcAge(data.items[i].dob)+' Years</h3></div><div class="player-team" style="background-image:url(img/clubs/'+data.items[i].ClubName.toLowerCase()+'.png)"></div></li>')
   	);
   }
 
